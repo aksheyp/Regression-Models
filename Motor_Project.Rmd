@@ -1,9 +1,10 @@
+___
 Title: MOTOR TRENDS DATA ANALYSIS REPORT – REGRESSION MODELS PROJECT	
 output:
-  pdf_document:
-    fig_height: 7
-    fig_width: 7
-    
+ pdf_document:
+  fig_height: 7
+  fig_width: 7
+___    
 ========================================================
 ## Executive Summary
 
@@ -21,11 +22,12 @@ amModel <- lm(mpg ~ am, data=mtcars); summary(amModel)
 ```
 Coefficients:
             Estimate		Std. Error 	t value 		Pr(>|t|)    
-(Intercept)   	17.147     	 1.125  		15.247 		1.13e-15 ***
-am             **7.245** 		 1.764  		 4.106 		0.000285 ***
+(Intercept)   	17.147     	 1.125  		15.247 		1.13e-15 
+am             **7.245** 		 1.764  		 4.106 		0.000285 
 Multiple R-squared: 0.3598,	Adjusted R-squared: **0.3385** 
 
 At face value, there appears to be a 7.245 increase in MPG yield in cars using manual transmissions over automatic ones. Yet the Adjusted R-squared fit was only 33.85%, indicating a poor fit and proving that a single variable such as *transmission* was not a good predictor of fuel efficiency. 
+
 ##T-TESTING 
 Next a T-test and hypothesis testing was used to infer whether the MPG of automatic and manual vehicles was the same, and if other variables played a part in the MPG yield. We set the null hypothesis (*H0*) as both automatic and manual vehicles yielded the same MPG. The alternate 
 Hypothesis (*H1*) being that there is a significant enough difference between the two types of transmission used with other variables too playing an important part. The following was used: 
